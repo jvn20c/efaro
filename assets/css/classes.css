@@ -1,0 +1,21 @@
+.fundo-principal {
+    background-image: url('../img/fundo.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--cor-branco);
+}
+
+.fundo-principal-branco {
+    background: var(--cor-branco);
+}
+
+.conteudo-principal {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--vão);
+}
+
+/* Todos que usarem esta classe terão no minimo o tamanho total da tela que está vendo (viewport) */
+.secao {
+    min-height: 100vh;
+}
