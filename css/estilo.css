@@ -1,0 +1,69 @@
+.conteudo-apresentacao {
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--vão);
+    height: 100vh;
+}
+
+.conteudo-texto-apresentacao, .imagem-apresentacao {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.imagem-apresentacao img,
+.imagem-apresentacao svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.conteudo-sobre-nos {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.conteudo-propriedades-grade {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.titulo-principal-grade {
+    margin-bottom: 1rem;
+}
+
+.descricao-grade {
+    padding-bottom: 5rem;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--vão);
+    counter-reset: contador-grade;
+}
+
+.grade h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grade h3::before {
+    counter-increment: contador-grade;
+    content: counter(contador-grade);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
