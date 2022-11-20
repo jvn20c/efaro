@@ -1,3 +1,15 @@
+/* .color1 { #3d7b30 };
+.color2 { #518f43 };
+.color3 { #65a355 };
+.color4 { #78b768 };
+.color5 { #8ccb7a }; */
+
+:root {
+    --cor-primaria: #0A1128;
+    --cor-branco: #FFFFFF;
+    --vão: 3rem; /* 30 px */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +21,57 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--cor-primaria);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+.fundo-principal {
+    background-image: url('../img/fundo.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--cor-branco);
+}
+
+.fundo-principal-branco {
+    background: var(--cor-branco);
+}
+
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--vão);
+}
+
+/* Todos que usarem esta classe terão no minimo o tamanho total da tela que está vendo (viewport) */
+.secao {
+    min-height: 100vh;
+}
