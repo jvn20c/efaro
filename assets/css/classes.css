@@ -19,3 +19,7 @@
 .secao {
     min-height: 100vh;
 }
+
+.espacamento-do-menu {
+    height: 65px;
+}
