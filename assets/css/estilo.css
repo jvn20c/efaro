@@ -3,7 +3,6 @@
     top: -7rem;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    align-items: stretch;
     gap: var(--vão);
     height: 100vh;
 }
@@ -14,14 +13,17 @@
     justify-content: center;
 }
 
-.conteudo-texto-apresentacao h2 {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    line-height: 1.1;
-}
-
 .imagem-apresentacao img,
 .imagem-apresentacao svg {
     max-width: 100%;
     height: auto;
+}
+
+.conteudo-sobre-nos {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }

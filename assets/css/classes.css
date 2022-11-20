@@ -6,6 +6,7 @@
 }
 
 .fundo-principal-branco {
+    color: var(--cor-primaria);
     background: var(--cor-branco);
 }
 
