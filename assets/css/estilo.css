@@ -1,12 +1,12 @@
-/* .color1 { #3d7b30 };
-.color2 { #518f43 };
-.color3 { #65a355 };
-.color4 { #78b768 };
-.color5 { #8ccb7a }; */
-
 :root {
-    --cor-primaria: #0A1128;
+    --cor-primaria: #000000;
     --cor-branco: #FFFFFF;
+    --cor-cinza-claro: #EEEEEE;
+    --cor-verde-1: #3d7b30;
+    --cor-verde-2: #518f43;
+    --cor-verde-3: #65a355;
+    --cor-verde-4: #78b768;
+    --cor-verde-5: #8ccb7a;
     --vão: 3rem; /* 30 px */
 }
 
@@ -54,6 +54,10 @@ h6 {
     font-size: 3.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .fundo-principal {
     background-image: url('../img/fundo.svg');
     background-size: cover;
@@ -74,4 +78,61 @@ h6 {
 /* Todos que usarem esta classe terão no minimo o tamanho total da tela que está vendo (viewport) */
 .secao {
     min-height: 100vh;
+}
+
+.menu {
+    background: var(--cor-branco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+}
+
+.conteudo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--cor-primaria);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.7rem;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    color: var(--cor-primaria);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--cor-verde-1);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
 }
