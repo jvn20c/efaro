@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: var(--vão);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .conteudo-texto-apresentacao, .imagem-apresentacao {
@@ -19,20 +19,22 @@
     height: auto;
 }
 
-.conteudo-sobre-nos {
+.conteudo-sustentabilidade {
     max-width: 80rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
 .conteudo-propriedades-grade {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .titulo-principal-grade {
@@ -47,23 +49,38 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--vão);
-    counter-reset: contador-grade;
+    /* counter-reset: contador-grade; */
 }
 
 .grade h3 {
     font-size: 3rem;
     position: relative;
-    padding-left: 5rem;
-    padding-bottom: 3rem;
+    /* padding-left: 5rem; */
+    /* padding-bottom: 3rem; */
 }
 
 .grade h3::before {
-    counter-increment: contador-grade;
-    content: counter(contador-grade);
+    /* counter-increment: contador-grade; */
+    /* content: counter(contador-grade); */
     position: absolute;
     font-size: 8rem;
     font-style: italic;
-    top: -4rem;
-    left: -2rem;
-    transform: rotate(5deg);
+    /* top: -4rem;
+    left: -2rem; */
+    /* transform: rotate(5deg); */
+}
+
+.imagem-galeria {
+    width: 100%;
+    max-width: 36rem;
+    min-height: 36rem;
+    overflow: hidden;
+}
+
+.imagem-galeria img {
+    transition: all 300ms ease-in-out;
+}
+
+.imagem-galeria img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
