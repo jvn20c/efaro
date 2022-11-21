@@ -35,7 +35,7 @@
     padding: 2rem;
     font-size: 1.7rem;
     /* font-family: 'Source Sans Pro', sans-serif; */
-    color: var(--cor-primaria);
+    color: var(--cor-cinza-medio);
     position: relative;
 }
 
@@ -45,12 +45,25 @@
     bottom: 1rem;
     left: 50%;
     width: 0;
-    height: 0.2rem;
+    height: 0.4rem;
+    border-radius: 10px 10px 0 0;
     background: var(--cor-verde-1);
     transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: var(--cor-primaria);
 }
 
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.logotipo {
+    margin-top: 1rem;
+}
+
+.logotipo img {
+    width: 18rem;
 }

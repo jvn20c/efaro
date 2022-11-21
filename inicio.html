@@ -24,14 +24,16 @@
 <body>
     <aside class="menu fundo-principal-branco">
         <div class="conteudo-principal conteudo-menu">
-            <h1><a href="/">EFARO</a></h1>
+            <div class="logotipo">
+                <h1><a href="/"><img src="imagens/logotipo.png" alt="Logotipo Favero Rodrigues"></a></h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#apresentacao">O Grupo</a></li>
                     <li><a href="#sustentabilidade">Sustentabilidade</a></li>
                     <!-- <li><a href="#indicadores">Indicadores</a></li> -->
-                    <li><a href="#propriedades">Propriedades</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#indicadores">Indicadores</a></li>
+                    <!-- <li><a href="#tabela">Tabela</a></li> -->
                     <li><a href="#fale-conosco">Fale conosco</a></li>
                 </ul>
             </nav>
@@ -71,38 +73,30 @@
         </div>
     </section>
 
-    <section id="propriedades" class="secao propriedade fundo-principal">
-        <div class="conteudo-principal conteudo-propriedades-grade">
-            <h2 class="titulo-principal-grade">Propriedades</h2>
-            <p class="descricao-grade">Uma breve descrição.</p>
+    <section id="indicadores" class="secao indicador fundo-principal">
+        <div class="conteudo-principal conteudo-indicadores-grade">
+            <h2 class="titulo-principal-grade">Indicadores</h2>
+            <p class="descricao-grade">Indicadores econômicos e climáticos.</p>
             <div class="grade">
                 <article>
-                    <h3>Fazenda Santa Rosa</h3>
-                    <p>Monte Azul Paulista - SP</p>
+                    <h3>Cotação dólar $(US)</h3>
+                    <a id="r_USD" title="Dólar" name="mercado_cotacao">Dólar</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
                 </article>
                 <article>
-                    <h3>Fazenda São Pedro</h3>
-                    <p>Meridiano - SP</p>
+                    <h3>Monte Azul Paulista - SP</h3>
+                    <p>Teste</p>
                 </article>
                 <article>
-                    <h3>Fazenda Bagagem</h3>
-                    <p>Barretos - SP</p>
-                </article>
-                <article>
-                    <h3>Fazenda Mata da Chuva</h3>
-                    <p>Barretos - SP</p>
-                </article>
-                <article>
-                    <h3>Fazenda Guariroba</h3>
-                    <p>São Joaqui da Barra - SP</p>
+                    <h3>Barretos - SP</h3>
+                    <p>Teste</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="galeria" class="secao propriedade fundo-principal-branco">
-        <div class="conteudo-principal conteudo-propriedades-grade">
-            <h2 class="titulo-principal-grade">Propriedades</h2>
+    <!-- <section id="galeria" class="secao indicador fundo-principal-branco">
+        <div class="conteudo-principal conteudo-indicadores-grade">
+            <h2 class="titulo-principal-grade">Galeria</h2>
             <p class="descricao-grade">Uma breve descrição.</p>
 
             <div class="grade">
@@ -135,7 +129,7 @@
     </section>
 
     <section id="tabela" class="secao fundo-principal-branco">
-        <div class="conteudo-principal conteudo-propriedades-grade">
+        <div class="conteudo-principal conteudo-indicadores-grade">
             <h2>Tabela</h2>
             <p>Sub-titulo</p>
 
@@ -177,22 +171,20 @@
                 </table>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="fale-conosco" class="secao apresentacao fundo-principal">
+    <section id="fale-conosco" class="secao apresentacao fundo-principal-branco">
         <div class="conteudo-principal conteudo-apresentacao">
             <div class="conteudo-texto-apresentacao">
-                <h2>Encontre-nos</h2>
-                <p>O nosso escritório fica na rua <strong>Dr. Cícero de Moraes</strong>, <strong>n&ordm 275</strong> no
-                    bairro <strong>Centro</strong> localizado na cidade de <strong>Monte Azul Paulista</strong>, estado de <strong>São Paulo</strong>, o
-                    CEP é o <strong>14730-000</strong>. E o nosso telefone para contato é o <strong>(17) 3361-2341</strong>.</p>
+                <h2>Envie uma mensagem para nós</h2>
             </div>
             <div class="imagem-apresentacao">
-                <img src="imagens/undraw_outdoors_amdn.svg" alt="Mulher agricultora">
+                <img src="imagens/fale-conosco.svg" alt="Mulher agricultora">
             </div>
             <div class="formulario-contato">
                 <fieldset class="formulario-grade">
-                    <legend>Ou envie uma mensagem para nós..</legend>
+                    <legend>Preencha os dados corretamente..</legend>
+
                     <div class="grupo-formulario">
                         <label for="primeiro-nome">Primeiro nome</label>
                         <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Ex.: João">
@@ -223,7 +215,7 @@
         </div>
     </section>
 
-    <footer id="rodape" class="rodape fundo-principal-branco">
+    <footer id="rodape" class="rodape">
         <p><a rel="nofollow" target="_blank" href="https://github.com/jvn20c/">feito com <span
                     class="coracao">&#9829</span> por jvnc</a></p>
     </footer>
