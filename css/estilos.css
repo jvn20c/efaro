@@ -1,6 +1,6 @@
 .conteudo-apresentacao {
     position: relative;
-    top: -7rem;
+    /* top: -7rem; */
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: var(--vão);
@@ -83,4 +83,85 @@
 
 .imagem-galeria img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.formulario-grade legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.formulario-contato {
+    grid-column: span 2;
+}
+
+.formulario-contato .formulario-grade {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--vão);
+}
+
+.grupo-formulario {
+    flex: 1 1 32rem;
+}
+
+.grupo-formulario label {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    border: none;
+    background: var(--cor-branco);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+    outline: none;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+    box-shadow: 0 0 0.8rem 0.2rem var(--cor-branco);
+}
+
+.grupo-formulario button {
+    border: 0.5rem solid var(--cor-branco);
+    background: none;
+    color: var(--cor-branco);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.grupo-formulario button:hover {
+    background: var(--cor-branco);
+    color: var(--cor-primaria);
+}
+
+.grupo-formulario ::placeholder {
+    color: var(--cor-cinza-escuro);
+}
+
+.rodape {
+    background: var(--cor-primaria);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.rodape a {
+    color: inherit;
+}
+
+.coracao {
+    color: red;
+}
+
+.rodape p {
+    margin: 0;
+    padding: 1rem;
+    color: var(--cor-branco);
 }

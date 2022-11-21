@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EFARO – Escritório Favero Rodrigues</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body class="fundo-principal">
+<body>
     <aside class="menu fundo-principal-branco">
         <div class="conteudo-principal conteudo-menu">
             <h1><a href="/">EFARO</a></h1>
@@ -142,42 +142,91 @@
             <div class="tabela-responsiva">
                 <table>
                     <caption>Tabela de exemplo</caption>
-          
+
                     <thead>
-                      <tr>
-                        <th>Título 1</th>
-                        <th>Título 2</th>
-                        <th>Título 3</th>
-                      </tr>
+                        <tr>
+                            <th>Título 1</th>
+                            <th>Título 2</th>
+                            <th>Título 3</th>
+                        </tr>
                     </thead>
-          
+
                     <tbody>
-                      <tr>
-                        <td>Conteúdo 1</td>
-                        <td>Conteúdo 2</td>
-                        <td>Conteúdo 3</td>
-                      </tr>
-                      <tr>
-                        <td>Conteúdo 1</td>
-                        <td>Conteúdo 2</td>
-                        <td>Conteúdo 3</td>
-                      </tr>
-                      <tr>
-                        <td>Conteúdo 1</td>
-                        <td>Conteúdo 2</td>
-                        <td>Conteúdo 3</td>
-                      </tr>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
                     </tbody>
-          
+
                     <tfoot>
-                      <tr>
-                        <td colspan="3">Testando</td>
-                      </tr>
+                        <tr>
+                            <td colspan="3">Testando</td>
+                        </tr>
                     </tfoot>
-                  </table>
+                </table>
             </div>
         </div>
     </section>
+
+    <section id="fale-conosco" class="secao apresentacao fundo-principal">
+        <div class="conteudo-principal conteudo-apresentacao">
+            <div class="conteudo-texto-apresentacao">
+                <h2>Encontre-nos</h2>
+                <p>O nosso escritório fica na rua <strong>Dr. Cícero de Moraes</strong>, <strong>n&ordm 275</strong> no
+                    bairro <strong>Centro</strong> localizado na cidade de <strong>Monte Azul Paulista</strong>, estado de <strong>São Paulo</strong>, o
+                    CEP é o <strong>14730-000</strong>. E o nosso telefone para contato é o <strong>(17) 3361-2341</strong>.</p>
+            </div>
+            <div class="imagem-apresentacao">
+                <img src="imagens/undraw_outdoors_amdn.svg" alt="Mulher agricultora">
+            </div>
+            <div class="formulario-contato">
+                <fieldset class="formulario-grade">
+                    <legend>Ou envie uma mensagem para nós..</legend>
+                    <div class="grupo-formulario">
+                        <label for="primeiro-nome">Primeiro nome</label>
+                        <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Ex.: João">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="segundo-nome">Segundo nome</label>
+                        <input type="text" name="segundo-nome" id="segundo-nome" placeholder="da Silva">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Ex.: joaodasilva@gmail.com">
+                    </div>
+
+                    <div class="grupo-formulario largura-cheia">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="" cols="30" rows="10"
+                            placeholder="Escreva sua mensagem.."></textarea>
+                    </div>
+
+                    <div class="grupo-formulario largura-cheia">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape" class="rodape fundo-principal-branco">
+        <p><a rel="nofollow" target="_blank" href="https://github.com/jvn20c/">feito com <span
+                    class="coracao">&#9829</span> por jvnc</a></p>
+    </footer>
 
 </body>
 

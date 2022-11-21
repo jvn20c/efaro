@@ -24,3 +24,8 @@
 .espacamento-do-menu {
     height: 65px;
 }
+
+body .largura-cheia {
+    width: 100%;
+    flex: 1 1 100%;
+}
