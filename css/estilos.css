@@ -7,7 +7,8 @@
     min-height: 100vh;
 }
 
-.conteudo-texto-apresentacao, .imagem-apresentacao {
+.conteudo-texto-apresentacao,
+.imagem-apresentacao {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -46,7 +47,7 @@
 
 .grade {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--vão);
     /* counter-reset: contador-grade; */
 }
@@ -56,6 +57,12 @@
     position: relative;
     /* padding-left: 5rem; */
     /* padding-bottom: 3rem; */
+}
+
+.clima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grade h3::before {
@@ -168,7 +175,9 @@
 }
 
 @media (max-width: 800px) {
-    .conteudo-apresentaca, .grade {
+
+    .conteudo-apresentaca,
+    .grade {
         grid-template-columns: 1fr;
     }
 
@@ -185,4 +194,15 @@
     .conteudo-indicadores-grade {
         display: block;
     }
+}
+
+.boataxa-container-cotacao {
+    color: var(--cor-branco);
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 300ms ease-in-out;
+}
+
+.boataxa-container-cotacao:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--cor-primaria);
 }
