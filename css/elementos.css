@@ -16,7 +16,12 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -58,28 +63,34 @@ p {
 .tabela-responsiva {
     overflow: hidden;
     overflow-x: auto;
-  }
-  
-  table {
+}
+
+table {
     min-width: 36rem;
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  table caption {
+}
+
+table caption {
     font-style: italic;
     font-size: 1.6rem;
     text-align: left;
     margin-bottom: 1rem;
-  }
-  
-  table td, table th {
+}
+
+table td,
+table th {
     white-space: nowrap;
     padding: 1rem;
     text-align: left;
     border: 0.1rem solid var(--cor-cinza-claro)
-  }
-  
-  tfoot td, table th {
+}
+
+tfoot td,
+table th {
     background: var(--cor-cinza-claro);
-  }
+}
+
+textarea {
+    resize: none;
+}

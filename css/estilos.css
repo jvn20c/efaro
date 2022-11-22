@@ -114,6 +114,7 @@
 .grupo-formulario input,
 .grupo-formulario textarea {
     border: 0.3rem solid var(--cor-cinza-escuro);
+    font-family: 'Open Sans', sans-serif;
     background: var(--cor-branco);
     padding: 1.5rem 2rem;
     width: 100%;
@@ -123,22 +124,23 @@
 
 .grupo-formulario input:focus,
 .grupo-formulario textarea:focus {
-    box-shadow: 0 0 0.8rem 0.2rem var(--cor-branco);
+    transition: all 300ms ease-in-out;
+    border: 0.3rem solid #555;
 }
 
 .grupo-formulario button {
-    border: 0.5rem solid var(--cor-cinza-escuro);
+    border: 0.3rem solid var(--cor-cinza-escuro);
     background: none;
-    color: var(--cor-branco);
+    color: var(--cor-primaria);
     padding: 1.5rem 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 
 .grupo-formulario button:hover {
-    background: var(--cor-branco);
-    color: var(--cor-primaria);
+    background: var(--cor-verde-1);
+    color: var(--cor-branco);
 }
 
 .grupo-formulario ::placeholder {
