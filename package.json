@@ -1,0 +1,24 @@
+{
+  "name": "efaro",
+  "version": "1.0.0",
+  "description": "🌷 Uma pequena página estática desenvolvida para o grupo familiar Favero Rodrigues que atua no ramo do agronegócio.",
+  "main": "inicio.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvn20c/efaro.git"
+  },
+  "keywords": [],
+  "author": "jvn20c",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvn20c/efaro/issues"
+  },
+  "homepage": "https://github.com/jvn20c/efaro#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
