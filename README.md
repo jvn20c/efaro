@@ -4,3 +4,4 @@
 - [ ] Redirecionamento de e-mail no formulário de contato
 - [ ] Textos informativos
 - [ ] Otimizações para SEO
+- [ ] Algoritmo para automação de minificação, transpilação e compressão dos códigos HTML, CSS, JS para um diretório /dist/
