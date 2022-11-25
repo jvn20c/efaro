@@ -6,6 +6,9 @@
     width: 100%;
     border-bottom: 0.1rem solid var(--cor-cinza-claro);
     z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: hsla(0, 100%, 100%, 0.9);
 }
 
 .conteudo-menu {
@@ -66,4 +69,12 @@
 
 .logotipo img {
     width: 18rem;
+}
+
+.menu ul li a.ativo {
+    color: var(--cor-primaria);
+}
+
+.fechar-menu {
+    display: none;
 }

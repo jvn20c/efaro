@@ -24,17 +24,21 @@
     <link rel="stylesheet" href="css/classes.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
+
+    <input id="fechar-menu" class="fechar-menu" type="checkbox" aria-label="Fechar o menu" role="button">
+    <label class="etiqueta-fechar-menu" for="fechar-menu" title="Abrir ou recolher o menu"></label>
     <aside class="menu fundo-principal-branco">
         <div class="conteudo-principal conteudo-menu">
             <div class="logotipo">
                 <h1><a href="/"><img src="imagens/logotipo.png" alt="Logotipo Favero Rodrigues"></a></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#apresentacao">O Grupo</a></li>
+            <nav class="menu-superior">
+                <ul onclick="getElementById('fechar-menu').checked = false;">
+                    <li><a href="#apresentacao" class="ativo">O Grupo</a></li>
                     <li><a href="#sustentabilidade">Sustentabilidade</a></li>
                     <li><a href="#indicadores">Indicadores</a></li>
                     <li><a href="#fale-conosco">Fale conosco</a></li>
@@ -121,12 +125,13 @@
                 <img src="imagens/fale-conosco.svg" alt="Mulher agricultora">
             </div>
             <div class="formulario-contato">
+                <form action="https://formsubmit.co/joao@efaro.com.br" method="POST">
                 <fieldset class="formulario-grade">
                     <legend>Preencha os dados corretamente..</legend>
 
                     <div class="grupo-formulario">
-                        <label for="nome-completo">Nome completo</label>
-                        <input type="text" name="nome-completo" id="nome-completo" placeholder="Ex.: João da Silva">
+                        <label for="name">Nome completo</label>
+                        <input type="text" name="name" id="name" placeholder="Ex.: João da Silva">
                     </div>
 
                     <div class="grupo-formulario">
@@ -151,6 +156,7 @@
 
                 </fieldset>
             </div>
+        </form>
         </div>
     </section>
 
@@ -161,6 +167,7 @@
 
 
     <script async src="https://boataxa.com.br/Api/Scripts/boataxa_hoje.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
